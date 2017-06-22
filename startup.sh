@@ -9,6 +9,6 @@ curl -LSso $HOME/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim;
 
 # Initialize all submodules for vim plugins
 pushd $HOME/.vim;
-git submodule init --recursive;
+git submodule init;
 git submodule update --recursive;
 popd;
