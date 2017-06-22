@@ -34,7 +34,8 @@ set statusline+=%=[%4l/%L]
 " Meta -- {{{
 set softtabstop=2
 set shiftwidth=2
-set expandtab
+set tabstop=4
+" set expandtab
 
 set scroll=15
 
