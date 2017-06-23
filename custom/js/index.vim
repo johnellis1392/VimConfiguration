@@ -18,3 +18,4 @@ augroup js_util
   let g:jsx_pragma_required = 0
 augroup end
 " }}}
+

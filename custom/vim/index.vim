@@ -7,6 +7,7 @@ augroup vim_utils
   setlocal foldmethod=marker
   setlocal foldlevel=99
   " }}}
+
 augroup end
 " }}}
 

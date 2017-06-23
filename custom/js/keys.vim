@@ -25,3 +25,4 @@ function! PrevFunctionDecl()
   call search("\\s*\\w\\+\\s*:\\{,1}\\s*function\\s*(\\(\\w\\+\\|,\\|\\s*\\)*)\\s*{\\{,1}", "bw")
 endfunction
 " }}}
+

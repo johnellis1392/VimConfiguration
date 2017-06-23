@@ -22,7 +22,11 @@ set confirm    " Confirm save before performing a command
 set visualbell " Visual bell instead of audible beeping
 set t_vb=
 set mouse=a    " Enable mouse
-set notimeout ttimeout ttimeoutlen=200 " Set timeout on keycodes
+
+" Set timeout on keycodes
+set notimeout
+set ttimeout
+set ttimeoutlen=200
 
 " Turn off cursor blinking
 set gcr=n:blinkon0
@@ -40,7 +44,9 @@ set tabstop=4
 set scroll=15
 
 set wildmenu   " Better command-line completion
+set wildmode=longest:full,full
 set showcmd    " Show partial commands
 
 set autochdir 
 " }}}
+

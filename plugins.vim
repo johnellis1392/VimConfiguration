@@ -16,7 +16,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 
-" Vundle Setup -- {{{
+" Vundle Setup {{{
 " Note: Use :PluginInstall to install plugins,
 "       and :PluginUpdate to update existing plugins
 " set rtp+=~/.vim/bundle/Vundle.vim
@@ -34,7 +34,7 @@ let g:syntastic_check_on_wq = 0
 " call vundle#end()
 " }}}
 
-" NeoBundle Setup -- {{{
+" NeoBundle Setup {{{
 " Note: Use NeoBundleInstall to install plugins, and
 "       NeoBundleUpdate to update existing plugins
 "
@@ -51,5 +51,45 @@ let g:syntastic_check_on_wq = 0
 " call neobundle#end()
 " }}}
 
+" EasyMotion Setup {{{
+
+" Disable default easy-motion mappings
+let g:EasyMotion_do_mapping = 0
+
+" Set easy-motion keybinding
+" nnoremap <leader>s <Plug>(easymotion-overwin-f)
+nmap <Leader>e <Plug>(easymotion-overwin-f)
+
+" Easy motion with smaller keyset
+" nnoremap <leader>s <Plug>(easymotion-overwin-f2)
+
+" jk motions: Move by lines
+nmap <leader>j <Plug>(easymotion-j)
+nmap <leader>k <Plug>(easymotion-k)
+
+" }}}
+
+" NERDTree config {{{
+
+nmap <leader>t :NERDTreeFocus<cr>
+nmap <leader>T :NERDTreeClose<cr>
+
+" }}}
+
+" CtrlP config {{{
+
+nmap <leader>o :CtrlP<cr>
+
+" }}}
+
+" Buffergator config {{{
+
+" Remove conflicting bindings for above NERDTree config
+" unmap <leader>to
+" unmap <leader>tc
+
+" }}}
+
 " Done setting up plugins: turn on filetype setting again
 filetype plugin indent on
+

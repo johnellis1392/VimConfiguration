@@ -12,8 +12,8 @@ nnoremap <silent> <c-k> <c-w>k
 nnoremap <silent> <c-l> <c-w>l
 
 " Faster motion keys (without moving window)
-nnoremap <silent> <c-n> 10j
-nnoremap <silent> <c-p> 10k
+" nnoremap <silent> <c-n> 10j
+" nnoremap <silent> <c-p> 10k
 
 " Easier close window operation
 nnoremap <silent> <c-c> :bd<cr>
@@ -31,17 +31,22 @@ nnoremap <silent> <c-t> :tabnew<cr>
 " }}}
 
 " Folding -- {{{
-" Turn on syntax folding and Map space to fold codeblock
-" set foldmethod=syntax
-nnoremap <silent> <space> za
+" Make indent folding default and Map space to fold codeblock (disabled for
+" now)
+set foldmethod=indent
+" nnoremap <silent> <space> za
 " }}}
 
 " Vimrc Sourcing -- {{{
 " Add mappings to make it easier to make it easier to edit
 " (not my words)
+
 let mapleader="\\"
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+" let mapleader = "\<Space>"
+nmap <Space> <leader>
+nnoremap <leader>ve :vsplit $MYVIMRC<cr>
+nnoremap <leader>vs :source $MYVIMRC<cr>
+
 " }}}
 
 " Mode Maps -- {{{
@@ -62,6 +67,7 @@ inoremap <c-s> <esc>:w<cr>
 
 " Visual Mode -- {{{
 vnoremap <silent> <c-j> <esc>
+" vnoremap <silent> <c-_> :normal! I" <esc>
 " }}}
 
 " O-Maps -- {{{

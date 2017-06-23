@@ -11,3 +11,9 @@
 "   " let v = @* " Get visual selection
 "   echom a:i
 " endfunction
+"
+" zM => Close all folds
+" zm => Close folds by level
+" zR => Open all folds
+" zr => Open folds by level
+
