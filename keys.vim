@@ -26,14 +26,16 @@ nnoremap <silent> <c-q><c-q> :q!<cr>
 " Tabs -- {{{
 nnoremap <silent> <c-t> :tabnew<cr>
 
-" nnoremap <silent> <c-,> gT
-" nnoremap <silent> <c-.> gt
+" Easier tab navigation
+nnoremap <leader>h :tabprevious<cr>
+nnoremap <leader>l :tabnext<cr>
+
 " }}}
 
 " Folding -- {{{
 
 " Make indent folding default
-set foldmethod=indent
+" set foldmethod=indent
 
 " Commands for navigating to the previous and
 " next closed folds
