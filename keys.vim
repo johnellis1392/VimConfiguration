@@ -31,10 +31,10 @@ nnoremap <silent> <c-t> :tabnew<cr>
 " }}}
 
 " Folding -- {{{
-" Make indent folding default and Map space to fold codeblock (disabled for
-" now)
+
+" Make indent folding default
 set foldmethod=indent
-" nnoremap <silent> <space> za
+
 " }}}
 
 " Vimrc Sourcing -- {{{

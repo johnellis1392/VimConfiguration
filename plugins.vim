@@ -64,29 +64,31 @@ nmap <Leader>e <Plug>(easymotion-overwin-f)
 " nnoremap <leader>s <Plug>(easymotion-overwin-f2)
 
 " jk motions: Move by lines
-nmap <leader>j <Plug>(easymotion-j)
-nmap <leader>k <Plug>(easymotion-k)
+nnoremap <leader>j <Plug>(easymotion-j)
+nnoremap <leader>k <Plug>(easymotion-k)
 
 " }}}
 
 " NERDTree config {{{
 
-nmap <leader>t :NERDTreeFocus<cr>
-nmap <leader>T :NERDTreeClose<cr>
+autocmd VimEnter * nnoremap <leader>t :NERDTreeFocus<cr>
+autocmd VimEnter * nnoremap <leader>T :NERDTreeClose<cr>
 
 " }}}
 
 " CtrlP config {{{
 
-nmap <leader>o :CtrlP<cr>
+autocmd VimEnter * nnoremap <leader>o :CtrlP<cr>
 
 " }}}
 
 " Buffergator config {{{
 
 " Remove conflicting bindings for above NERDTree config
-" unmap <leader>to
-" unmap <leader>tc
+" NOTE: Must use autocmd here since all plugins get
+" sourced after vimrc is done loading
+autocmd VimEnter * unmap <leader>to
+autocmd VimEnter * unmap <leader>tc
 
 " }}}
 
