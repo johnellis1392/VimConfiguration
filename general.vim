@@ -2,6 +2,7 @@
 
 " General -- {{{
 set nocompatible
+set hidden " Sets option to delete abandoned buffers
 syntax on
 set number
 " }}}

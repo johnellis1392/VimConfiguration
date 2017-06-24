@@ -92,6 +92,13 @@ autocmd VimEnter * unmap <leader>tc
 
 " }}}
 
+" MiniBufExplorer config {{{
+
+" Add command to focus on MBE window
+nnoremap <leader>mo :MBEFocus<cr>
+
+" }}}
+
 " Done setting up plugins: turn on filetype setting again
 filetype plugin indent on
 
