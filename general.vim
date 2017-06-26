@@ -37,6 +37,7 @@ set statusline+=%=[%4l/%L]
 " }}}
 
 " Meta -- {{{
+
 set softtabstop=2
 set shiftwidth=2
 set tabstop=4
@@ -48,6 +49,14 @@ set wildmenu   " Better command-line completion
 set wildmode=longest:full,full
 set showcmd    " Show partial commands
 
-set autochdir 
+set autochdir " Automatically change directory when opening files
+
+" Set the default directory for storing *.swp files, so
+" as to not clutter up working project directories
+" NOTE: the '//' at the end here means that the name
+" of the swap file is constructed out of the full path
+" to the file that is being modified
+set directory=$HOME/.vim/swapfiles//
+
 " }}}
 
