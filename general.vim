@@ -41,7 +41,7 @@ set statusline+=%=[%4l/%L]
 set softtabstop=2
 set shiftwidth=2
 set tabstop=4
-" set expandtab
+set expandtab
 
 set scroll=15
 
