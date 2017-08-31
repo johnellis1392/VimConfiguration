@@ -41,5 +41,8 @@
 	path = bundle/vim-ctrlspace
 	url = https://github.com/vim-ctrlspace/vim-ctrlspace.git
 [submodule "bundle/vim-plugin-minibufexpl"]
-	path = bundle/vim-plugin-minibufexpl
+	path = unused_plugins/vim-plugin-minibufexpl
 	url = https://github.com/weynhamz/vim-plugin-minibufexpl.git
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
