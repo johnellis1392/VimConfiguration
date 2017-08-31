@@ -14,6 +14,12 @@ set hlsearch   " Highlight Searches
 " }}}
 
 " Visual -- {{{
+
+" Reset available color pallete for vim to 256.
+" It defaults to 8, which can mess with the color
+" pallettes on some plugins.
+set t_Co=256
+
 set ignorecase " Case insensitive search
 set smartcase  " Case sensitive search when you use capital letters
 set backspace=indent,eol,start 
@@ -35,6 +41,7 @@ set gcr=n:blinkon0
 hi StatusLine ctermbg=8 ctermfg=4
 set statusline=%f\ -\ FileType:\ %y
 set statusline+=%=[%4l/%L]
+
 " }}}
 
 " Meta -- {{{

@@ -5,7 +5,8 @@ filetype off
 " Initialize pathogen
 execute pathogen#infect()
 
-" Setup Syntastic
+" Syntastic Setup {{{
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -15,6 +16,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" }}}
 
 " Vundle Setup {{{
 " Note: Use :PluginInstall to install plugins,
@@ -67,6 +69,9 @@ nmap <Leader>e <Plug>(easymotion-overwin-f)
 nnoremap <leader>j <Plug>(easymotion-j)
 nnoremap <leader>k <Plug>(easymotion-k)
 
+" Easier find function
+nmap <c-f> <Plug>(easymotion-overwin-f)
+
 " }}}
 
 " NERDTree config {{{
@@ -94,6 +99,8 @@ set wildignore+=*tmp*,*node_modules*
 " Set custom markers for finding project root
 let g:ctrlp_root_markers = ['pom.xml', 'package.json', 'Dockerfile', 'docker-compose.yaml']
 
+nnoremap <c-b> :CtrlPBuffer<cr>
+
 " }}}
 
 " Buffergator config {{{
@@ -110,6 +117,52 @@ autocmd VimEnter * unmap <leader>tc
 
 " Add command to focus on MBE window
 nnoremap <leader>mo :MBEFocus<cr>
+
+" Customize color scheme
+" hi MBENormal                guifg=#808080 guibg=fg
+" hi MBEChanged               guifg=#CD5907 guibg=fg
+" hi MBEVisibleNormal         guifg=#5DC2D6 guibg=fg
+" hi MBEVisibleChanged        guifg=#F1266F guibg=fg
+" hi MBEVisibleActiveNormal   guifg=#A6DB29 guibg=fg
+" hi MBEVisibleActiveChanged  guifg=#F1266F guibg=fg
+
+" hi MBENormal                guifg=Blue guibg=fg
+" hi MBEChanged               guifg=Red guibg=fg
+" hi MBEVisibleNormal         guifg=Blue guibg=fg
+" hi MBEVisibleChanged        guifg=Yellow guibg=fg
+" hi MBEVisibleActiveNormal   guifg=Green guibg=fg
+" hi MBEVisibleActiveChanged  guifg=Yellow guibg=fg
+
+" hi link MBENormal                Error
+" hi link MBEChanged               Error
+" hi link MBEVisibleNormal         Error
+" hi link MBEVisibleChanged        Error
+" hi link MBEVisibleActiveNormal   Error
+" hi link MBEVisibleActiveChanged  Error
+
+
+" }}}
+
+" Airline config {{{
+
+" let g:airline#extensions#tabline#enabled=1
+" let g:airline#extensions#tabline#show_buffers=1
+" let g:airline#extensions#tabline#show_tabs=1
+
+" Available Themes:
+
+" Light Themes:
+let g:airline_theme='aurora'
+" let g:airline_theme='kolor'
+" let g:airline_theme='xtermlight'
+" let g:airline_theme='deus'
+" let g:airline_theme='murmur'
+
+" Dark Themes:
+" let g:airline_theme='dark'
+" let g:airline_theme='base16_colors'
+" let g:airline_theme='simple'
+
 
 " }}}
 
