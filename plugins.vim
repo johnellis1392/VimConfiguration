@@ -80,6 +80,20 @@ autocmd VimEnter * nnoremap <leader>T :NERDTreeClose<cr>
 
 autocmd VimEnter * nnoremap <leader>o :CtrlP<cr>
 
+" Add files in .gitignore to ignore paths
+" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" Custom ignore declarations
+let g:ctrlp_custom_ignore = {
+      \ 'dir': '\v[\/]\.(git\|hg\|svn)$',
+      \ 'file': '\v\.(exe|so|dll)$',
+      \ }
+
+set wildignore+=*tmp*,*node_modules*
+
+" Set custom markers for finding project root
+let g:ctrlp_root_markers = ['pom.xml', 'package.json', 'Dockerfile', 'docker-compose.yaml']
+
 " }}}
 
 " Buffergator config {{{
