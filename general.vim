@@ -67,4 +67,3 @@ set autochdir " Automatically change directory when opening files
 set directory=$HOME/.vim/swapfiles//
 
 " }}}
-

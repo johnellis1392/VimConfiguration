@@ -99,6 +99,13 @@ set wildignore+=*tmp*,*node_modules*
 " Set custom markers for finding project root
 let g:ctrlp_root_markers = ['pom.xml', 'package.json', 'Dockerfile', 'docker-compose.yaml']
 
+" List of all possible extensions
+" let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
+"                         \ 'undo', 'line', 'changes', 'mixed', 'bookmarkdir']
+
+" Enabled extensions
+let g:ctrlp_extensions = ['dir', 'line', 'mixed']
+
 nnoremap <c-b> :CtrlPBuffer<cr>
 
 " }}}

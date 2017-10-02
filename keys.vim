@@ -79,8 +79,9 @@ endfunction
 " }}}
 
 " Vimrc Sourcing -- {{{
+
 " Add mappings to make it easier to make it easier to edit
-" (not my words)
+" (not my words; great quote)
 
 let mapleader="\\"
 " let mapleader = "\<Space>"
@@ -89,7 +90,7 @@ nmap <Space> <leader>
 " NOTE: Changing this to reference configs in ~/.vim
 " for convenience.
 " nnoremap <leader>ve :vsplit $MYVIMRC<cr>
-nnoremap <leader>ve :vsplit $HOME/.vim/general.vim
+nnoremap <leader>ve :vsplit $HOME/.vim/general.vim<cr>
 nnoremap <leader>vs :source $MYVIMRC<cr>
 
 " }}}
@@ -133,6 +134,14 @@ cnoremap <c-j> <cr>
 
 " Add jk escape sequence
 cnoremap jk <c-c>
+
+" Motion maps for convenience
+cnoremap <c-a> <home>
+cnoremap <c-e> <end>
+cnoremap <c-p> <up>
+cnoremap <c-n> <down>
+cnoremap <c-b> <left>
+cnoremap <c-f> <right>
 
 " }}}
 

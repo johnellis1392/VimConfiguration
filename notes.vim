@@ -16,4 +16,3 @@
 " zm => Close folds by level
 " zR => Open all folds
 " zr => Open folds by level
-
