@@ -97,6 +97,18 @@ nnoremap <leader>vs :source $MYVIMRC<cr>
 
 " Mode Maps -- {{{
 
+" Normal Mode -- {{{
+
+" Format current buffer and save
+nmap <leader>f gg=G<c-o><c-o>:w<cr>
+
+" Clear highlighting after search
+" nnoremap <silent> <leader>h :nohl<cr>
+" nnoremap <leader>h :nohl<cr>
+nnoremap <silent> <leader><esc> :nohl<cr>
+
+" }}}
+
 " Insert Mode -- {{{
 " Map jk to escape to normal mode
 inoremap <silent> jk <esc>
@@ -112,8 +124,12 @@ inoremap <c-s> <esc>:w<cr>
 " }}}
 
 " Visual Mode -- {{{
+
 vnoremap <silent> <c-j> <esc>
+vnoremap <silent> // y/<c-r>"<cr>
+
 " vnoremap <silent> <c-_> :normal! I" <esc>
+
 " }}}
 
 " O-Maps -- {{{
@@ -146,11 +162,3 @@ cnoremap <c-f> <right>
 " }}}
 
 " }}}
-
-" Miscellaeous {{{
-
-" Format current buffer and save
-nmap <leader>f gg=G<c-o><c-o>:w<cr>
-
-" }}}
-

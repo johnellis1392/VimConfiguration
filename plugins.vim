@@ -59,8 +59,9 @@ let g:syntastic_check_on_wq = 0
 let g:EasyMotion_do_mapping = 0
 
 " Set easy-motion keybinding
-" nnoremap <leader>s <Plug>(easymotion-overwin-f)
-nmap <Leader>e <Plug>(easymotion-overwin-f)
+" nmap <Leader>e <Plug>(easymotion-overwin-f)
+" nmap <Leader>e <Plug>(easymotion-s)
+nmap <Leader>e <Plug>(easymotion-bd-f)
 
 " Easy motion with smaller keyset
 " nnoremap <leader>s <Plug>(easymotion-overwin-f2)
@@ -70,7 +71,8 @@ nnoremap <leader>j <Plug>(easymotion-j)
 nnoremap <leader>k <Plug>(easymotion-k)
 
 " Easier find function
-nmap <c-f> <Plug>(easymotion-overwin-f)
+" nmap <c-f> <Plug>(easymotion-overwin-f)
+nmap <c-f> <Plug>(easymotion-bd-f)
 
 " }}}
 
@@ -175,4 +177,3 @@ let g:airline_theme='aurora'
 
 " Done setting up plugins: turn on filetype setting again
 filetype plugin indent on
-
