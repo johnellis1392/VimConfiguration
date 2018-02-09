@@ -9,4 +9,3 @@ augroup text_utils
   " }}}
 
 augroup end
-

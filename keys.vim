@@ -31,8 +31,8 @@ nnoremap <silent> <c-k> <c-w>k
 nnoremap <silent> <c-l> <c-w>l
 
 " Faster motion keys (without moving window)
-" nnoremap <silent> <c-n> 10j
-" nnoremap <silent> <c-p> 10k
+nnoremap <silent> <c-n> 10j
+nnoremap <silent> <c-p> 10k
 
 " Easier close window operation
 nnoremap <silent> <c-c> :bd<cr>

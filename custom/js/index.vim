@@ -1,4 +1,5 @@
 " Javascript-specific keybindings and functions
+
 " Autocommands -- {{{
 augroup js_util
   autocmd!
@@ -18,4 +19,3 @@ augroup js_util
   let g:jsx_pragma_required = 0
 augroup end
 " }}}
-

@@ -1,4 +1,5 @@
 " Custom language-specific plugins
+
 " Autocommands -- {{{
 augroup custom_utils
   autocmd!
@@ -11,4 +12,3 @@ augroup custom_utils
   autocmd Filetype markdown   source $HOME/.vim/custom/text/index.vim
 augroup end
 " }}}
-

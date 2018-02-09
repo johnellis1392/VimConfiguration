@@ -1,4 +1,5 @@
 " Custom keybindings for vimscript files
+
 " Vimscript file settings -- {{{
 augroup vim_utils
   autocmd!
@@ -10,4 +11,3 @@ augroup vim_utils
 
 augroup end
 " }}}
-
