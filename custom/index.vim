@@ -10,5 +10,8 @@ augroup custom_utils
   " Set txt and md extensions to same root
   autocmd Filetype text       source $HOME/.vim/custom/text/index.vim
   autocmd Filetype markdown   source $HOME/.vim/custom/text/index.vim
+
+  " Set binary extension plugins
+  autocmd Filetype *.bin,*.exe source $HOME/.vim/custom/binary/index.vim
 augroup end
 " }}}
