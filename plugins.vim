@@ -89,6 +89,7 @@ autocmd VimEnter * nnoremap <leader>o :CtrlP<cr>
 
 " Add files in .gitignore to ignore paths
 " let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_working_path_mode = 'ra'
 
 " Custom ignore declarations
 let g:ctrlp_custom_ignore = {
@@ -99,7 +100,7 @@ let g:ctrlp_custom_ignore = {
 set wildignore+=*tmp*,*node_modules*
 
 " Set custom markers for finding project root
-let g:ctrlp_root_markers = ['pom.xml', 'package.json', 'Dockerfile', 'docker-compose.yaml']
+let g:ctrlp_root_markers = ['pom.xml', 'package.json', 'Dockerfile', 'docker-compose.yaml', 'project.clj', '.envrc']
 
 " List of all possible extensions
 " let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
@@ -172,6 +173,15 @@ let g:airline_theme='aurora'
 " let g:airline_theme='base16_colors'
 " let g:airline_theme='simple'
 
+
+" }}}
+
+" RainbowParentheses Config {{{
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 " }}}
 

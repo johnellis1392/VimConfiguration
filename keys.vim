@@ -32,22 +32,29 @@ nnoremap <silent> <c-l> <c-w>l
 
 " Faster motion keys (without moving window)
 nnoremap <silent> <c-n> 10j
-nnoremap <silent> <c-p> 10k
+"nnoremap <silent> <c-p> 10k
 
 " Easier close window operation
-nnoremap <silent> <c-c> :bd<cr>
+nnoremap <silent> <c-c><c-c> :bd<cr>
 
 " Easier Document Management
 nnoremap <silent> <c-s> :w<cr>
+" nnoremap <silent> <C-s> :w<cr>
 nnoremap <silent> <c-q><c-q> :q!<cr>
+
+nnoremap <silent> <c-c><c-v> :vsp<cr>
+nnoremap <silent> <c-c><c-s> :sp<cr>
+"nnoremap <silent> <c-A-s> :vsp<cr>
 " }}}
 
 " Tabs -- {{{
 nnoremap <silent> <c-t> :tabnew<cr>
 
 " Easier tab navigation
-" nnoremap <leader>h :tabprevious<cr>
-" nnoremap <leader>l :tabnext<cr>
+"nnoremap <leader>h :bp<cr>
+"nnoremap <leader>l :bn<cr>
+"nnoremap <silent> <c-L> :vsp<cr>
+"nnoremap <silent> <c-J> :sp<cr>
 
 " }}}
 
@@ -100,7 +107,7 @@ nnoremap <leader>vs :source $MYVIMRC<cr>
 " Normal Mode -- {{{
 
 " Format current buffer and save
-nmap <leader>f gg=G<c-o><c-o>:w<cr>
+nmap <leader>f mqgg=G'q:w<cr>
 
 " Clear highlighting after search
 " nnoremap <silent> <leader>h :nohl<cr>
