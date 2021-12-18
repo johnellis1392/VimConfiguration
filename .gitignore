@@ -1,5 +1,11 @@
-autoload
-.netrwhist
-*.swp
+/autoload
+/.netrwhist
+/*.swp
+/vim_keys.txt
+/tags
+
 /bak/*
 !/bak/.gitkeep
+
+/swapfiles/*
+!/swapfiles/.gitkeep
