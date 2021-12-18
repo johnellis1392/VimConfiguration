@@ -1,3 +1,5 @@
 autoload
 .netrwhist
 *.swp
+/bak/*
+!/bak/.gitkeep

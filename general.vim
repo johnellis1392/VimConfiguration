@@ -1,11 +1,18 @@
 " General settings for vim
+"
 
 " General -- {{{
+" set verbose=20
 set shell=/bin/bash
 set nocompatible
 set hidden " Sets option to delete abandoned buffers
+set encoding=utf-8
+
 syntax on
 set number
+set ai
+set smartindent
+
 " }}}
 
 " Search -- {{{
@@ -65,5 +72,14 @@ set autochdir " Automatically change directory when opening files
 " of the swap file is constructed out of the full path
 " to the file that is being modified
 set directory=$HOME/.vim/swapfiles//
+
+" Folding config for C-style languages.
+" Reset to foldmethod=syntax for non-C languages.
+set foldmethod=marker
+set foldmarker={,}
+
+" Set extra search directories
+let $PATH=$PATH . ":~/.cabal/bin"
+let $PATH=$PATH . ":~/.local/bin"
 
 " }}}
